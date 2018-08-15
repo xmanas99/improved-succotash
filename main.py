@@ -19,7 +19,7 @@ class CssiUser(ndb.Model):
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        template = jinja_env.get_template('templates/main.html')
+        template = jinja_env.get_template('main.html')
         current_user = users.get_current_user()
         if not current_user:
             self.response.write(template.render({
