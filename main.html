@@ -1,0 +1,15 @@
+<!--DOCTYPE html-->
+<html>
+<head>
+  <title>test</title>
+</head>
+
+<body>
+  <div class="button">
+    {% if logout_url %}
+    <a href="{{ logout_url }}"> LOG OUT WITH GOOGLE </a>
+    {% else %}
+    <a href="{{ login_url }}"> LOG IN WITH GOOGLE </a>
+    {% endif %}
+</body>
+</html>
