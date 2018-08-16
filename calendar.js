@@ -77,9 +77,10 @@ function DayCells() {
 						if (iDay < lastDay) {
 								iDay++ ; 
 						} else {
+                                col.createTextNode(iDay);
 								break;
-								col.createTextNode(iDay);
 						}
+
 						row.appendChild(col);
 				} 
 				wrap.appendChild(row);
