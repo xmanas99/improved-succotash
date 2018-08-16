@@ -40,6 +40,41 @@ overflow:hidden;
     }
 
 
+    .dropdown
+        {float:center;
+                overflow:hidden;
+        }
+        .dropdown .dropbtn{
+                font-size:16px;
+                 border:none;
+outline:none;
+        color:white;
+                background-color:inherit;
+                        margin:0;
+        }
+
+
+        .dropdown-content{
+                display:none;
+                        position:absolute;
+                                background-color:white;
+                                z-index:1;}
+
+        .dropdown-content a{
+                float:none;
+                        color:black;
+                                text-decoration:none;
+                                text-align:left;}
+    .dropdown-content a:hover{
+            background-color:red;
+    }
+
+    .dropdown:hover .dropdown-content{
+            display:block;
+    }
+
+    
+
 
     .month{
             padding: 70px 25px;
@@ -252,10 +287,22 @@ body {font-family:Verdana,sans-serif;}
             </ul>
 
 
-            <ul class= "days">
-                    <li> 1</li> 
-                    <li> 2</li> 
-                    <li>3 </li> 
+           <div class="dropdown">
+           
+                   
+                   <ul class= "days">
+                    <li> <button class="dropbtn"> 1</li> 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                            <button>New event</button></div>
+
+
+           
+                    <li>  2</li>
+
+
+                     <li>3 </li> 
                     <li> 4</li> 
                     <li> 5</li> 
                     <li>6 </li>
@@ -284,8 +331,10 @@ body {font-family:Verdana,sans-serif;}
                     <li> 29</li>
                     <li> 30</li>
                     <li> 31</li>
+                   
             </ul>
-
+          
+            </div>
         </body> 
        </html>
 >>>>>>> 34e58e5b6710b08adc1e497def5d1fc06cbb5bd9
